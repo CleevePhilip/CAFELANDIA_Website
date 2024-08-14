@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafelândia</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header container">
+      <button class="menu-icon"><i class="fa-solid fa-bars"></i></button>
+      <nav class="navigation">
+        <p class="logo">CAFELÂNDIA</p>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home">Home</a></li>
+          <li class="nav-item"><a href="#about">About</a></li>
+          <li class="nav-item"><a href="#menu">Menu</a></li>
+          <li class="nav-item"><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container" id="home">
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Welcome to CAFELÂNDIA</h1>
+          <h5>Your Perfect Coffee Experience Awaits</h5>
+          <p>
+            Indulge in the finest blends, handcrafted to perfection. Whether
+            you're looking for a cozy spot to relax, a vibrant place to meet
+            friends, or a productive workspace, CAFELÂNDIA has it all. Discover
+            our diverse menu, from classic favorites to innovative brews, and
+            treat yourself to the ultimate coffee journey.
+          </p>
+          <button class="btn-primary">Explore Our Menu</button>
+        </div>
+
+        <div class="hero-image">
+          <img src="/images/hero-img.jpg" alt="hero" />
+        </div>
+      </section>
+
+      <section class="features container" id="about">
+        <article class="feature">
+          <h2 class="feature-title">CAFELÂNDIA SPECIALS</h2>
+          <p class="feature-description">
+            Iced Caramel Latte - A refreshing mix of espresso, milk, and caramel
+            syrup over ice.
+          </p>
+        </article>
+        <article class="feature">
+          <h2 class="feature-title">SEASONAL SPECIALS</h2>
+          <p class="feature-description">
+            Pumpkin Spice Latte - A fall favorite, available only during autumn.
+          </p>
+        </article>
+        <article class="feature">
+          <h2 class="feature-title">LOYALTY PROGRAM</h2>
+          <p class="feature-description">
+            Collect points and redeem them for free drinks and discounts.
+          </p>
+        </article>
+      </section>
+
+      <section class="benefits container">
+        <article class="benefit">
+          <div class="carousel">
+            <div class="carousel-slide">
+              <img src="./images/cozy-bg.jpg" alt="Cozy Vibes" />
+              <img src="./images/hero-img.jpg" alt="Cozy Vibes" />
+              <img src="./images/work-bg.jpg" alt="Cozy Vibes" />
+            </div>
+            <div class="carousel-btn">
+              <button class="prev">
+                <i class="fa-solid fa-caret-left"></i>
+              </button>
+              <button class="next">
+                <i class="fa-solid fa-caret-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="benefit-content">
+            <h2 class="benefit-title">Cozy Vibes</h2>
+            <p>
+              Step into our warm and inviting space, where every corner is
+              designed to provide comfort and relaxation. Whether you're sipping
+              your favorite brew or enjoying a pastry, our cozy atmosphere makes
+              it the perfect spot to unwind.
+            </p>
+            <p>
+              Enjoy the soothing background music, soft lighting, and
+              comfortable seating as you take a break from the hustle and bustle
+              of daily life. It's more than just a coffee shop—it's your
+              personal retreat.
+            </p>
+          </div>
+        </article>
+
+        <article class="benefit">
+          <div class="benefit-content">
+            <h2 class="benefit-title">
+              Trained Baristas Providing the Best Quality Service
+            </h2>
+            <p>
+              Our skilled baristas are passionate about coffee and are dedicated
+              to delivering an exceptional experience with every cup. Whether
+              you prefer a classic espresso or an innovative brew, our team is
+              trained to craft your drink to perfection.
+            </p>
+            <p>
+              With a deep understanding of coffee origins, brewing techniques,
+              and flavor profiles, our baristas ensure that each beverage is
+              prepared with care and expertise. From the first sip to the last,
+              you'll taste the difference that comes from a commitment to
+              quality.
+            </p>
+          </div>
+          <div class="benefit-image">
+            <div class="carousel">
+              <div class="carousel-slide">
+                <img src="./images/cozy-bg.jpg" alt="Cozy Vibes" />
+                <img src="./images/hero-img.jpg" alt="Cozy Vibes" />
+                <img src="./images/work-bg.jpg" alt="Cozy Vibes" />
+              </div>
+              <div class="carousel-btn">
+                <button class="prev">
+                  <i class="fa-solid fa-caret-left"></i>
+                </button>
+                <button class="next">
+                  <i class="fa-solid fa-caret-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="menu container">
+        <div class="menu-header" id="menu">
+          <h2>CAFELÂNDIA Menu</h2>
+          <p>
+            Explore our wide range of offerings, crafted to cater to every
+            taste.
+          </p>
+        </div>
+
+        <div class="menu-category">
+          <h3>Coffee & Espresso</h3>
+          <div class="menu-item">
+            <span>Espresso</span>
+            <span>10.00 PHP</span>
+          </div>
+          <div class="menu-item">
+            <span>Americano</span>
+            <span>10.00 PHP</span>
+          </div>
+          <div class="menu-item">
+            <span>Latte</span>
+            <span>10.00 PHP</span>
+          </div>
+          <div class="menu-item">
+            <span>Cappuccino</span>
+            <span>10.00 PHP</span>
+          </div>
+          <div class="menu-item">
+            <span>Mocha</span>
+            <span>10.00 PHP</span>
+          </div>
+        </div>
+
+        <div class="menu-category">
+          <h3>Specialty Drinks</h3>
+          <div class="menu-item">
+            <span>CAFELÂNDIA Special</span>
+            <span>10.00 PHP</span>
+          </div>
+          <div class="menu-item">
+            <span>Iced Caramel Latte</span>
+            <span>10.00 PHP</span>
+          </div>
+          <div class="menu-item">
+            <span>Matcha Green Tea Latte</span>
+            <span>10.00 PHP</span>
+          </div>
+        </div>
+
+        <div class="menu-category">
+          <h3>Teas & Other Beverages</h3>
+          <div class="menu-item">
+            <span>Chai Latte</span>
+            <span>10.00 PHP</span>
+          </div>
+          <div class="menu-item">
+            <span>Herbal Tea</span>
+            <span>10.00 PHP</span>
+          </div>
+          <div class="menu-item">
+            <span>Hot Chocolate</span>
+            <span>10.00 PHP</span>
+          </div>
+        </div>
+
+        <div class="menu-category">
+          <h3>Bread & Pastries</h3>
+          <div class="menu-item">
+            <span>Croissant</span>
+            <span>15.00 PHP</span>
+          </div>
+          <div class="menu-item">
+            <span>Muffin</span>
+            <span>15.00 PHP</span>
+          </div>
+          <div class="menu-item">
+            <span>Bagel</span>
+            <span>15.00 PHP</span>
+          </div>
+          <div class="menu-item">
+            <span>Cinnamon Roll</span>
+            <span>15.00 PHP</span>
+          </div>
+          <div class="menu-item">
+            <span>Chocolate Chip Cookie</span>
+            <span>15.00 PHP</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item" id="faq">
+          <h3 class="faq-question">Where is our location?</h3>
+          <div class="faq-answer">
+            <p>We are located at 123 Coffee Lane, Brewtown, USA.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">What are your opening hours?</h3>
+          <div class="faq-answer">
+            <p>We are open from 7:00 AM to 9:00 PM, Monday to Sunday.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Do you offer vegan options?</h3>
+          <div class="faq-answer">
+            <p>
+              Yes, we offer a variety of vegan options, including almond, oat,
+              and soy milk, as well as vegan pastries.
+            </p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Do you have Wi-Fi?</h3>
+          <div class="faq-answer">
+            <p>Yes, free Wi-Fi is available for all our customers.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Do you have a loyalty program?</h3>
+          <div class="faq-answer">
+            <p>
+              Yes, join our loyalty program to earn points and redeem them fors
+              free drinks and discounts.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-contents">
+          <div class="footer-text">
+            <p>&copy; 2024 CAFELÂNDIA. All rights reserved.</p>
+            <p>cafelandiacommunity@gmail.com</p>
+            <p>123 Coffee Lane, Brewtown, USA</p>
+            <p>Phone: +1 (555) 123-4567</p>
+          </div>
+          <div class="message">
+            <label for="message">Message us</label>
+            <input type="text" />
+          </div>
+          <ul class="footer-socials">
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

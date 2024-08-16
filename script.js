@@ -78,3 +78,23 @@ window.addEventListener("scroll", () => {
     nav.style.height = "auto";
   }, 3000);
 });
+
+const heroSlider = document.querySelector(".hero-slider");
+const imageSlider = document.querySelectorAll(".hero-slider img");
+const sizeSlider = imageSlider[0].clientWidth;
+let countSlider = 0;
+
+let next;
+next = setInterval(() => {
+  countSlider++;
+  heroSlider.style.transition = "transform 0.5s ease-in-out";
+  heroSlider.style.transform = `translateX(${-sizeSlider * countSlider}px)`;
+
+  if (countSlider >= imageSlider.length) {
+    setTimeout(() => {
+      heroSlider.style.transition = "none";
+      countSlider = 0;
+      heroSlider.style.transform = `translateX(0)`;
+    }, 500); // Reset the slider after the transition ends
+  }
+}, 5000);

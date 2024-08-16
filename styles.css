@@ -68,7 +68,7 @@ body {
 }
 
 .hero-content {
-  width: 30rem;
+  width: 45rem;
 }
 
 .hero-content h1 {
@@ -94,12 +94,22 @@ body {
   cursor: pointer;
   margin-top: 1rem;
 }
-
-.hero-image img {
+.hero-image {
   width: 100%;
-  height: auto;
-  max-height: 25rem;
-  object-fit: cover;
+  overflow: hidden; /* Ensures the images don't overflow the container */
+  height: 30rem;
+}
+
+.hero-slider {
+  display: flex;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.hero-slider img {
+  width: 100%;
+  height: 100vh; /* Makes the image take up the full viewport height */
+  object-fit: cover; /* Ensures the image covers the container, cropping if necessary */
 }
 
 /* Features section */

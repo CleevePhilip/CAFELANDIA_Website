@@ -158,27 +158,8 @@ body {
   font-size: 1rem;
   margin-bottom: 1rem;
 }
-.carousel {
-  width: 30rem;
-  overflow: hidden;
-  background-color: yellow;
-  position: relative;
-  display: flex;
-}
-.carousel-slide {
-  width: 300%;
-  display: flex;
-  transition: transform ease-in-out 0.5s;
-}
-.carousel-btn {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem;
-}
-.carousel-slide img {
+
+.benefit-img img {
   width: 100%;
   height: auto;
   max-height: 20rem;
@@ -235,7 +216,39 @@ i {
 .menu-item span:last-child {
   font-weight: bold;
 }
+/* Testimonials section */
+.testimonials h1 {
+  font-size: 16px;
+  text-align: center;
+  padding: 3rem;
+}
 
+.testimonials-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+}
+.card {
+  background-color: var(--button-color);
+  padding: 20px;
+  height: 20rem;
+  width: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.profile {
+  background-color: red;
+  padding: 5rem;
+  border-radius: 50%;
+  position: absolute;
+  top: -80px;
+}
+.profile-text {
+  font-size: 12px;
+}
 /* FAQ section */
 .faq {
   margin-top: 3rem;

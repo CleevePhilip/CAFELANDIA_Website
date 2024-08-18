@@ -15,39 +15,6 @@ faqQuestions.forEach((question) => {
     }
   });
 });
-// Carousel Section
-const carousels = document.querySelectorAll(".carousel");
-
-carousels.forEach((carousel) => {
-  const next = carousel.querySelector(".next");
-  const prev = carousel.querySelector(".prev");
-  const carouselSlide = carousel.querySelector(".carousel-slide");
-  const carouselImages = carouselSlide.querySelectorAll("img");
-
-  let count = 0;
-  let size = carouselImages[0].clientWidth;
-
-  const updateSize = () => {
-    size = carouselImages[0].clientWidth;
-    carouselSlide.style.transform = `translateX(${-size * count}px)`;
-  };
-
-  window.addEventListener("resize", updateSize);
-
-  next.addEventListener("click", () => {
-    if (count >= carouselImages.length - 1) return;
-    carouselSlide.style.transition = "transform 0.5s ease-in-out";
-    count++;
-    carouselSlide.style.transform = `translateX(${-size * count}px)`;
-  });
-
-  prev.addEventListener("click", () => {
-    if (count <= 0) return;
-    carouselSlide.style.transition = "transform 0.5s ease-in-out";
-    count--;
-    carouselSlide.style.transform = `translateX(${-size * count}px)`;
-  });
-});
 
 // Navigation Toggle
 const toggleNav = document.querySelector(".menu-icon");
